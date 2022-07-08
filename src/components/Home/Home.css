@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Bebas+Neue&family=Caveat&family=Dancing+Script&family=Gentium+Plus:ital@1&family=Inconsolata:wght@200;300;400&family=Joan&family=Kanit:ital,wght@0,100;0,200;1,100&family=Metal&family=Nunito:wght@200&family=Nuosu+SIL&family=PT+Sans&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap');
+
+.container {
+    color: rgba(3, 13, 42, 0.95);
+    font-family: 'Metal', cursive;
+}
