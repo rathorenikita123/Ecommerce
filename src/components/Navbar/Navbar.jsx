@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 const Navba = () => {
     const state = useSelector((state) => state.handleCart);
+     const [display, setDisplay] = useState(false);
+    
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 px-4 shadow-sm">
@@ -12,6 +14,7 @@ const Navba = () => {
                     E-commerce
                 </NavLink>
                 <button
+                    onClick={()=>setDisplay(!display)} 
                     className="navbar-toggler "
                     type="button"
                     data-bs-toggle="collapse"
@@ -21,7 +24,7 @@ const Navba = () => {
                     aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse " id="navbarSupportedContent">
+                <div className={`navbar-collapse  ${display ? 'show' : 'collapse'}` } id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item ">
                             <NavLink className="nav-link" to="/">
