@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
-import { useSelector, useState } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 const Navba = () => {
